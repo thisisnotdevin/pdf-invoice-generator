@@ -1,0 +1,38 @@
+.add-product {
+    display: flex;
+    margin: 2rem;
+    align-items: flex-start; /* Align items to the start of the column */
+}
+
+.add-product label {
+    display: block;
+    margin-bottom: 8px;
+    margin-left: 1rem;
+}
+
+.add-product select {
+    width: 200px;
+}
+
+.box-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Remove the default up and down arrows from number input */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0; /* Optional: Some browsers add margin to the arrows */
+}
+.delete-btn{
+    margin-left: 0.5rem;
+    background-color: red;
+    color: white;
+}
+.side-btns{
+    align-items: flex-start;
+    justify-content: left;
+}

@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "jspdf-invoice-template": "^1.4.3",
+    "jspdf-invoice-template-nodejs": "^1.4.30"
+  }
+}

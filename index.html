@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+   
+    <div class="box-container">
+        <div class="side-btns">
+
+            <button onclick="addProduct()">Add Another Product</button>
+        
+            <button class="generate-pdf" onclick="generatePDF()"> generate pdf invoice</button>
+        
+    
+        </div>
+        <div id="products-container">
+          <div class="add-product">
+                <label for="numberInput">Cantidad:</label>
+                <input type="number" name="numberInput" min="0" max="100" step="1" value="">
+                <br>
+                
+                <label for="selectOption">Producto:</label>
+                <select name="selectOption">
+                    <option value="Select">Select</option>
+                    <option value="Perfiles">Perfiles</option>
+                    <option value="Lamina">Lamina</option>
+                    <option value="Helado">Helado</option>
+                </select>
+
+                <button class="delete-btn" onclick="deleteProduct(this)">X</button>
+            </div>
+        </div>
+       
+       
+    </div>
+ 
+    <script src="https://unpkg.com/jspdf-invoice-template@1.4.3/dist/index.js"></script>
+  
+    <script src="script.js"></script> 
+</body>
+</html>
